@@ -1,6 +1,6 @@
-let mySwiper = new Swiper('.testimonials__slider', {
+let mainSlider = new Swiper('.main-slider', {
 	loop: true,
-	slidesPerView: 3,
+	slidesPerView: 1,
 	// slidesPerGroup: 3,
 	// autoHeight: true,
 	grabCursor: true, // cursor hand
@@ -47,10 +47,6 @@ let mySwiper = new Swiper('.testimonials__slider', {
 	  } */
 	 },
 
-	navigation: {
-	  nextEl: '.swiper-button-next',
-	  prevEl: '.swiper-button-prev',
-	},
 
 /* 	breakpoints: {
 		320: {

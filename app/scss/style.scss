@@ -11,10 +11,12 @@
 
 // Blocks
 @import "blocks/header";
+@import "blocks/main-slider";
 @import "blocks/footer";
 
 // Components
 @import "components/menu";
+@import "components/swiper";
 
 /* ==========================================================================
   General Styles
@@ -31,7 +33,6 @@ body {
 	color: #666666;
 
 	&.lock {
-		overflow: hidden;
 	}
 }
 .wrapper {

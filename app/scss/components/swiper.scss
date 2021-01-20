@@ -5,14 +5,8 @@
 		
 	}
 }
-.swiper-container {
-	padding: 0px 0px 30px 0px; 
-}
 
-// pagination
-.swiper-pagination {
-	bottom: 0;
-}
+// Default pagination
 .swiper-pagination-bullet {
 	width: 15px;
 	height: 15px;
@@ -27,6 +21,26 @@
 }
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
 	margin: 0 15px;
+}
+
+// Main-slider
+.main-slider.swiper-container-horizontal>.swiper-pagination-bullets {
+	bottom: 25px;
+}
+.main-slider.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 5px;
+}
+.main-slider .swiper-pagination-bullet {
+	width: 30px;
+	height: 4px;
+	background: #666666;
+	opacity: 1;
+	border-radius: 0;
+	border: 0;
+
+	&-active {
+		background-color: #00aeef;
+	}
 }
 
 // buttons 
