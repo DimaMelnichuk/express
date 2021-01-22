@@ -12,7 +12,21 @@
 // Blocks
 @import "blocks/header";
 @import "blocks/main-slider";
+@import "blocks/content-page";
+@import "blocks/aside-page";
+@import "blocks/lifestyle-page";
 @import "blocks/footer";
+@import "blocks/title";
+@import "blocks/recent-post";
+@import "blocks/overlay-post";
+@import "blocks/fashion-page";
+@import "blocks/title-aside";
+
+// Aside blocks
+@import "aside/media-aside";
+@import "aside/recent-aside";
+@import "aside/categories-aside";
+@import "aside/block-aside";
 
 // Components
 @import "components/menu";
@@ -47,6 +61,35 @@ body {
 
 .page {
 	flex: 1 1 auto;
+
+	// .page__body
+
+	&__body {
+		display: flex;
+		border-top: 1px solid #dddddd;
+
+		@media (max-width: $md2+px) {
+			flex-direction: column;
+		}
+	}
+
+	// .page__body-content
+
+	&__body-content {
+		flex: 1 1 auto;
+		min-width: 0;
+		border-right: 1px solid #dddddd;
+
+		@media (max-width: $md2+px) {
+			border: 0;
+		}
+	}
+	
+	// .page__body-aside
+	
+	&__body-aside {
+		flex: 0 0 370px;
+	}
 }
 
 .main-screen {

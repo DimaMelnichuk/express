@@ -1,0 +1,36 @@
+.media-aside {
+
+	// .media-aside__list
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	// .media-aside__item
+
+	&__item {
+		margin: 0px 10px 10px 0px;
+	}
+
+	// .media-aside__link
+
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50px;
+		height: 50px;
+		font-size: 15px;
+		background-color: #eeeeee;
+		color: #666666;
+		border-radius: 100%;
+		transition: color .3s;
+
+		@media (min-width: $md2+px) {
+			&:hover {
+				color: #3b5999;
+			}
+		}
+	}
+}

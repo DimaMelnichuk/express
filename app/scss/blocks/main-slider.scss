@@ -1,7 +1,6 @@
 .main-slider {
 	margin: 15px 0px 0px 0px;
 	padding: 0px 0px 60px 0px;
-	border-bottom: 1px solid #dddddd;
 
 	// .main-slider__row
 
@@ -42,7 +41,16 @@
 	// .slider-post__img
 
 	&__img {
+		display: block;
 		position: relative;
+
+		@media (min-width: $md2+px) {
+			&:hover {
+				.slider-post__overlay-title {
+					color: #00aeef;
+				}
+			}
+		}
 
 		&--sm {
 			img {
@@ -113,6 +121,7 @@
 		font-weight: 700;
 		letter-spacing: 0.02em;
 		margin: 0px 0px 15px 0px;
+		transition: color .3s;
 
 		@media (max-width: $md3+px) {
 			font-size: 28px;

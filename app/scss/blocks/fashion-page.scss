@@ -1,0 +1,38 @@
+.fashion-page {
+	position: relative;
+
+	// .fashion-page__row
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0px -10px;
+
+		@media (max-width: $md3+px) {
+			margin: -10px 0px;
+		}
+	}
+
+	// .fashion-page__column
+
+	&__column {
+		flex: 0 1 50%;
+		padding: 0px 10px;
+
+		@media (max-width: $md3+px) {
+			flex: 0 1 100%;
+			padding: 10px 0px;
+		}
+	}
+
+	// .fashion-page__item
+
+	&__item {
+		display: flex;
+		margin: 0px 0px 20px 0px;
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+}

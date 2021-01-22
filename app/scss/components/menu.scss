@@ -12,6 +12,24 @@
 			}
 		}
 	}
+
+	// .menu__title
+
+	&__title {
+		display: none;
+
+		@media (max-width: $md2+px) {			
+			position: absolute;
+			display: block;
+			top: 15px;
+			left: 17px;
+			font-size: 20px;
+			font-weight: 600;
+			letter-spacing: 0.04em;
+			color: #ffffff;
+		}
+	}
+
 	// .menu__list
 
 	&__list {

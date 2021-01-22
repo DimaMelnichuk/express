@@ -46,12 +46,13 @@
 // buttons 
 .swiper-button-prev,
 .swiper-button-next {
+	position: absolute;
+	top: 20px;
+	margin: 0;
 	background-color: transparent;
-	width: 45px;
-	height: 45px;
-	border-radius: 100%;
-	color: #fff;
-	border: 2px solid;
+	width: 10px;
+	height: 18px;
+	color: #666666;
 
 	&:hover {
 		@media (min-width: $md2+px) {
@@ -64,17 +65,25 @@
 	}
 }
 
+.swiper-button-prev {
+	right: 30px;
+	left: auto;
+}
+.swiper-button-next {
+	right: 0px;
+}
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
 	position: absolute;
-	font-family: "FontAwesome";
+	font-family: "fontello";
 	font-size: 18px;
 }
 .swiper-button-prev::after {
-	content: "\f060";
+	content: "\e801";
 }
 .swiper-button-next::after {
-	content: "\f061";
+	content: "\e802";
 }
 
 // numbers
