@@ -52,5 +52,35 @@ let fashionSlider = new Swiper('.fashion-page__slider-container', {
 		nextEl: '.fashion-page__slider-next',
 		prevEl: '.fashion-page__slider-prev',
 	 },
+});
 
+let newsSlider = new Swiper('.news-page__slider-container', {
+	loop: false,
+	grabCursor: true,
+	speed: 500,
+	effect: 'fade',
+	slidesPerView: 1,
+
+
+	navigation: {
+		nextEl: '.news-page__slider-next',
+		prevEl: '.news-page__slider-prev',
+	},
+
+});
+
+let sportSlider = new Swiper('.sport-news__slider-container', {
+	loop: false,
+	grabCursor: true,
+	speed: 500,
+	effect: 'fade',
+	slidesPerColumnFill: 'row',
+	slidesPerColumn: 2,
+	slidesPerView: 2,
+	slidesPerGroup: 2,
+
+	navigation: {
+		nextEl: '.sport-news__slider-next',
+		prevEl: '.sport-news__slider-prev',
+	},
 });

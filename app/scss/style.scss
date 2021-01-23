@@ -19,8 +19,12 @@
 @import "blocks/title";
 @import "blocks/recent-post";
 @import "blocks/overlay-post";
+@import "blocks/big-post";
 @import "blocks/fashion-page";
+@import "blocks/news-page";
 @import "blocks/title-aside";
+@import "blocks/teach-news";
+@import "blocks/sport-news";
 
 // Aside blocks
 @import "aside/media-aside";
@@ -67,6 +71,7 @@ body {
 	&__body {
 		display: flex;
 		border-top: 1px solid #dddddd;
+		border-bottom: 1px solid #dddddd;
 
 		@media (max-width: $md2+px) {
 			flex-direction: column;

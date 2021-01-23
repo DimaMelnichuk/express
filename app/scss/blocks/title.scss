@@ -10,6 +10,10 @@
 	margin: 0px 70px 35px 0px;
 	overflow: hidden;
 
+	@media (max-width: $md4+px) {
+		padding: 0 0 0 10px;
+	}
+
 	&::after {
 		content: "";
 		position: absolute;
