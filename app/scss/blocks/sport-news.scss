@@ -1,6 +1,7 @@
 .sport-news {
 	position: relative;
 	padding: 40px 0px 0px 0px;
+	margin: 0px 0px 45px 0px;
 
 	// .sport-news__slider-prev
 
@@ -15,6 +16,7 @@
 	// .sport-news__slider-container
 
 	&__slider-container {
+		min-width: 0;
 	}
 
 	// .sport-news__slider-wrapper
@@ -30,5 +32,7 @@
 	// .sport-news__item
 
 	&__item {
+		padding: 0px 0px 30px 0px;
+		border-bottom: 1px solid #dddddd;
 	}
 }
