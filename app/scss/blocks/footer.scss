@@ -1,0 +1,292 @@
+.footer {
+	background-color: #222222;
+	padding: 45px 0px 25px 0px;
+	// .footer__top
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		margin: 0px 0px 30px 0px;
+		padding: 0px 0px 30px 0px;
+		border-bottom: 1px solid #dddddd;
+
+		@media (max-width: $md3+px) {
+			flex-wrap: wrap;
+		}
+	}
+
+	// .footer__top-logo
+
+	&__top-logo {
+		margin: 0px 40px 0px 0px;
+
+		@media (max-width: $md3+px) {
+			flex: 0 1 100%;
+			margin: 0px 0px 20px 0px;
+		}
+	}
+
+	// .footer__top-form
+
+	&__top-form {
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+
+		@media (max-width: $md3+px) {
+			flex-direction: column;
+		}
+	}
+
+	// .footer__bottom
+
+	&__bottom {
+		padding: 0px 0px 50px 0px;
+		margin: 0px 0px 30px 0px;
+		border-bottom: 1px solid #dddddd;
+
+		@media (max-width: $md4+px) {
+			padding: 0px 0px 30px 0px;
+			margin: 0px 0px 20px 0px;
+		}
+	}
+
+	// .footer__bottom-row
+
+	&__bottom-row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0px -25px;
+
+		@media (max-width: $md1+px) {
+			margin: 0px -15px;
+		}
+	}
+
+	// .footer__bottom-column
+
+	&__bottom-column {
+		flex: 0 1 33.333%;
+		padding: 0px 25px;
+
+		@media (max-width: $md1+px) {
+			padding: 0px 15px;
+		}
+
+		@media (max-width: $md2+px) {
+			flex: 0 1 50%;
+
+			&:first-child {
+				flex: 0 1 100%;
+				margin: 0px 0px 20px 0px;
+			}
+		}
+
+		@media (max-width: $md3+px) {
+			flex: 0 1 100%;
+
+			&:nth-child(2){
+				margin: 0px 0px 20px 0px;
+			}
+		}
+	}
+
+	// .footer__bottom-text
+
+	&__bottom-text {
+		font-size: 14px;
+		line-height: 25px;
+		font-weight: 400;
+		letter-spacing: 0.12em;
+		color: #dddddd;
+		margin: 0px 0px 20px 0px;
+	}
+
+	// .footer__bottom-media
+
+	&__bottom-media {
+	}
+
+	// .footer__bottom-item
+
+	&__bottom-item {
+		display: flex;
+		margin: 0px 0px 20px 0px;
+		padding: 0px 0px 20px 0px;
+		border-bottom: 1px solid #dddddd;
+
+		@media (max-width: $md4+px) {
+			margin: 0px 0px 15px 0px;
+			padding: 0px 0px 15px 0px;
+		}
+
+		&:last-child {
+			margin: 0;
+			padding: 0;
+			border: none;
+		}
+	}
+
+	// .footer__bottom-twitter
+
+	&__bottom-twitter {
+		margin: 0px 0px 20px 0px;
+		padding: 0px 0px 20px 0px;
+		border-bottom: 1px solid #dddddd;
+
+		@media (max-width: $md4+px) {
+			margin: 0px 0px 15px 0px;
+			padding: 0px 0px 15px 0px;
+		}
+
+		&:last-child {
+			margin: 0;
+			padding: 0;
+			border: none;
+		}
+	}
+
+	// .footer__copyright
+
+	&__copyright {
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: 0.02em;
+		text-align: center;
+		color: #ffffff;
+	}
+}
+.top-form {
+
+	// .top-form__input
+
+	&__input {
+		max-width: 570px;
+		width: 100%;
+		height: 52px;
+		padding: 20px;
+		border-radius: 3px;
+		font-size: 14px;
+		font-weight: 700;
+		letter-spacing: 0.12em;
+		color: #666666;
+		background-color: #ffffff;
+		margin: 0px 15px 0px 0px;
+
+		@media (max-width: $md3+px) {
+			margin: 0px 0px 15px 0px;
+			max-width: 100%;
+		}
+	}
+
+	// .top-form__btn
+
+	&__btn {
+		position: relative;
+		max-width: 185px;
+		width: 100%;
+		height: 52px;
+		padding: 20px 65px 20px 20px;
+		border-radius: 3px;
+		font-size: 14px;
+		font-weight: 700;
+		letter-spacing: 0.12em;
+		color: #ffffff;
+		background-color: #00aeef;
+		transition: background-color .3s;
+
+		@media (max-width: $md3+px) {
+			max-width: 100%;
+		}
+
+		@media (min-width: $md2+px) {
+			&:hover {
+				background-color: #03a5e1;
+			}
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			right: 20px;
+			background: url("../img/footer/send.png") 0 0 no-repeat;
+			width: 25px;
+			height: 13px;
+		}
+	}
+}
+
+.twitter-post {
+
+	// .twitter-post__text
+
+	&__text {
+		position: relative;
+		font-size: 14px;
+		line-height: 24px;
+		font-weight: 700;
+		letter-spacing: 0.02em;
+		color: #dddddd;
+		margin: 0px 0px 10px 0px;
+
+		&::before {
+			content: "\f099";
+			position: relative;
+			left: 0;
+			margin: 0px 15px 0px 0px;
+			font-family: "fontello";
+			font-size: 13px;
+			color: #ffffff;
+		}
+	}
+
+	// .twitter-post__text-link
+
+	&__text-link {
+		color: #00aeef;
+		border-bottom: 1px solid transparent;
+		transition: border .3s;
+
+		@media (min-width: $md2+px) {
+			&:hover {
+				border-bottom: 1px solid #00aeef;
+			}
+		}
+	}
+
+	// .twitter-post__footer
+
+	&__footer {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .twitter-post__footer-date
+
+	&__footer-date {
+		font-size: 12px;
+		font-weight: 400;
+		letter-spacing: 0.02em;
+		color: #ffffff;
+	}
+
+	// .twitter-post__footer-actions
+
+	&__footer-actions {
+		display: flex;
+		align-items: center;
+	}
+
+	// .twitter-post__footer-reply
+
+	&__footer-reply {
+		display: inline-block;
+	}
+
+	// .twitter-post__footer-retfeet
+
+	&__footer-retfeet {
+		display: inline-block;
+		margin: 0px 0px 0px 20px;
+	}
+}

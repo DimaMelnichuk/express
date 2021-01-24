@@ -35,11 +35,11 @@
 	&__item-title {
 		display: block;
 		font-size: 14px;
-		line-height: 20px;
+		line-height: 24px;
 		font-weight: 700;
 		letter-spacing: 0.02em;
 		color: #222222;
-		margin: 0px 0px 10px 0px;
+		margin: 0px 0px 15px 0px;
 		transition: color .3s;
 
 		@media (max-width: $md4+px) {
@@ -51,6 +51,10 @@
 				color: #00aeef;
 			}
 		}
+
+		&--white {
+			color: #dddddd;
+		}
 	}
 
 	// .recent-post__item-date
@@ -60,6 +64,14 @@
 		font-weight: 600;
 		letter-spacing: 0.02em;
 		color: #666666;
+
+		&--white {
+			color: #ffffff;
+		}
+
+		span {
+			padding: 0px 0px 0px 15px;
+		}
 	}
 
 	// .recent-post__item-author
