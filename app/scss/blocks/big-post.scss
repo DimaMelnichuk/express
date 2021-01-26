@@ -1,11 +1,11 @@
 .big-post {
-
+	min-width: 0;
 	// .big-post__img
 
 	&__img {
-		display: flex;
-		flex: 0 1 143%;
+		display: block;
 		height: 217px;
+		min-width: 0;
 		background-color: #222222;
 
 		@media (max-width: $md4+px) {
@@ -28,10 +28,20 @@
 			}
 		}
 
+		&--df {
+			display: flex;
+			flex: 0 1 143%;
+
+			@media (max-width: $md2+px) {
+				flex: 0 1 120%;
+			}
+		}
+
 		img {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
+			min-width: 0;
 		}
 	}
 

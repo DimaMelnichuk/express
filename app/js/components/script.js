@@ -5,9 +5,9 @@ let mainSlider = new Swiper('.main-slider', {
 	speed: 500,
 	effect: 'fade',
 
-/* 	autoplay: {
-		delay: 2000,
-	}, */
+	autoplay: {
+		delay: 3000,
+	},
 	
 	pagination: {
 		el: '.main-slider__pagination',
@@ -16,11 +16,35 @@ let mainSlider = new Swiper('.main-slider', {
 
 });
 
+let newsSlider = new Swiper('.news-page__slider-container', {
+	loop: false,
+	grabCursor: true,
+	spaceBetween: 30,
+	speed: 500,
+
+	navigation: {
+		nextEl: '.news-page__slider-next',
+		prevEl: '.news-page__slider-prev',
+	},
+
+	breakpoints: {
+		// when window width is >= 320px
+		320: {
+			slidesPerView: 1,
+		},
+		// when window width is >= 640px
+		600: {
+			slidesPerView: 2,
+		}
+	 }
+
+});
+
 let lifestyleSlider = new Swiper('.lifestyle-page__slider-container', {
 	loop: false,
 	slidesPerView: 1,
-	effect: 'fade',
 	slidesPerColumnFill: "row",
+	slidesPerColumn: 1,
 	grabCursor: true,
 	speed: 500,
 	
@@ -30,12 +54,10 @@ let lifestyleSlider = new Swiper('.lifestyle-page__slider-container', {
 	 },
 
 	 breakpoints: {
-		// when window width is >= 320px
-		320: {
-			slidesPerColumn: 1,
+		601: {
+			slidesPerColumn: 2,
 		},
-		// when window width is >= 640px
-		600: {
+		800: {
 			slidesPerColumn: 3,
 		}
 	 }
@@ -46,7 +68,6 @@ let fashionSlider = new Swiper('.fashion-page__slider-container', {
 	slidesPerView: 1,
 	grabCursor: true,
 	speed: 500,
-	effect: 'fade',
 
 	navigation: {
 		nextEl: '.fashion-page__slider-next',
@@ -54,33 +75,30 @@ let fashionSlider = new Swiper('.fashion-page__slider-container', {
 	 },
 });
 
-let newsSlider = new Swiper('.news-page__slider-container', {
-	loop: false,
-	grabCursor: true,
-	speed: 500,
-	effect: 'fade',
-	slidesPerView: 1,
 
-
-	navigation: {
-		nextEl: '.news-page__slider-next',
-		prevEl: '.news-page__slider-prev',
-	},
-
-});
 
 let sportSlider = new Swiper('.sport-news__slider-container', {
 	loop: false,
 	grabCursor: true,
 	speed: 500,
-	effect: 'fade',
+	spaceBetween: 30,
 	slidesPerColumnFill: 'row',
-	slidesPerColumn: 2,
-	slidesPerView: 2,
-	slidesPerGroup: 2,
+	slidesPerColumn: 1,
+	slidesPerView: 1,
+	slidesPerGroup: 1,
 
 	navigation: {
 		nextEl: '.sport-news__slider-next',
 		prevEl: '.sport-news__slider-prev',
 	},
+
+	breakpoints: {
+		600: {
+			slidesPerView: 2,
+		},
+		900: {
+			slidesPerView: 3,
+			slidesPerColumn: 2,
+		}
+	 }
 });

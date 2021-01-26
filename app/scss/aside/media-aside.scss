@@ -25,7 +25,7 @@
 		background-color: #eeeeee;
 		color: #666666;
 		border-radius: 100%;
-		transition: color .3s;
+		transition: color .3s, background .3s;
 
 		@media (max-width: $md4+px) {
 			width: 45px;
@@ -34,7 +34,8 @@
 
 		@media (min-width: $md2+px) {
 			&:hover {
-				color: #3b5999;
+				color: #eeeeee;
+				background: #00aeef;
 			}
 		}
 	}

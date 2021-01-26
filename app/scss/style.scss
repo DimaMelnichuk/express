@@ -75,6 +75,7 @@ body {
 
 		@media (max-width: $md2+px) {
 			flex-direction: column;
+			border-bottom: none;
 		}
 	}
 

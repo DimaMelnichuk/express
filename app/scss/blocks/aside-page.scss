@@ -28,6 +28,10 @@
 			padding: 30px 15px 25px 0px;
 		}
 
+		@media (max-width: 650px) {
+			padding: 30px 0px 25px 0px;
+		}
+
 		@media (max-width: $md4+px) {
 			padding: 25px 0px 20px 0px;
 		}
@@ -47,6 +51,10 @@
 
 		@media (max-width: $md3+px) {
 			padding: 30px 15px 25px 0px;
+		}
+
+		@media (max-width: 650px) {
+			padding: 30px 0px 25px 0px;
 		}
 
 		@media (max-width: $md4+px) {
@@ -69,6 +77,10 @@
 			padding: 30px 0px 25px 15px;
 		}
 
+		@media (max-width: 650px) {
+			padding: 30px 0px 25px 0px;
+		}
+
 		@media (max-width: $md4+px) {
 			padding: 25px 0px 20px 0px;
 		}
@@ -87,6 +99,10 @@
 
 		@media (max-width: $md3+px) {
 			padding: 30px 0px 0px 15px;
+		}
+
+		@media (max-width: 650px) {
+			padding: 30px 0px 0px 0px;
 		}
 
 		@media (max-width: $md4+px) {
