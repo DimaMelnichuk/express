@@ -1,0 +1,22 @@
+.header-page {
+	padding: 25px 0px;
+	// .header-page__row
+
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	// .header-page__logo
+
+	&__logo {
+		height: 60px;
+	}
+
+	// .header-page__logo-link
+
+	&__logo-link {
+	}
+}
+
