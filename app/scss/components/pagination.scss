@@ -1,27 +1,35 @@
 .pagination {
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	// .pagination__arrow
-
-	&__arrow {
-	}
+	justify-content: flex-start;
 
 	// .pagination__list
 
 	&__list {
 		display: flex;
-
-		li {
-
-		}
 	}
 
 	// .pagination__link
 
 	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #666666;
+		width: 32px;
+		height: 32px;
+		border: 1px solid transparent;
+		border-radius: 100%;
+		transition: border .3s, color .3s;
+
+		@media (min-width: $md2+px) {
+			&:hover {
+				color: #039ee1;
+			}
+		}
 
 		&--active {
+			border: 1px solid #dddddd;
 		}
 	}
 

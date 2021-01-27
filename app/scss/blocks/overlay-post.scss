@@ -15,16 +15,26 @@
 			background: rgba(29, 27, 26, 0.70);
 		}
 
-		img {
-			max-width: 100%;
-			width: 100%;
+		&--content {
 			height: 340px;
-			object-fit: cover;
-			background-color: #222222;
-
+			
 			@media (max-width: $md3+px) {
 				height: 290px;
 			}
+		}
+
+		&--aside {
+
+			img {
+				height: 200px;
+			}
+		}
+
+		img {
+			max-width: 100%;
+			width: 100%;
+			object-fit: cover;
+			background-color: #222222;
 		}
 	}
 
@@ -32,13 +42,27 @@
 
 	&__overlay {
 		position: absolute;
-		bottom: 30px;
-		left: 30px;
 		color: #fff;
 
-		@media (max-width: $md4+px) {
-			bottom: 15px;
-			left: 15px;
+		&--content {
+			bottom: 30px;
+			left: 30px;
+
+			@media (max-width: $md4+px) {
+				bottom: 15px;
+				left: 15px;
+			}
+		}
+
+
+		&--aside {
+			bottom: 20px;
+			left: 20px;
+
+			@media (max-width: $md4+px) {
+				bottom: 15px;
+				left: 15px;
+			}
 		}
 	}
 
