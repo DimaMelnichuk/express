@@ -6,6 +6,8 @@
 		display: block;
 		height: 217px;
 		min-width: 0;
+		max-width: 100%;
+		width: 100%;
 		background-color: #222222;
 
 		@media (max-width: $md4+px) {
@@ -43,6 +45,16 @@
 			object-fit: cover;
 			min-width: 0;
 		}
+	}
+
+	// .big-post__category
+
+	&__category {
+		font-size: 12px;
+		font-weight: 700;
+		letter-spacing: 0.02em;
+		color: #00aeef;
+		margin: 0px 0px 8px 0px;
 	}
 
 	// .big-post__title

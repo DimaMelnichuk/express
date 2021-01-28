@@ -96,7 +96,7 @@
 	// .header__menu
 
 	&__menu {
-
+		margin: 0px 0px 15px 0px;
 	}
 
 }
@@ -115,7 +115,6 @@
 
 		@media (max-width: 600px) {
 			flex-direction: column;
-
 		}
 	}
 
