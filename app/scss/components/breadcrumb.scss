@@ -40,12 +40,23 @@
 		}
 
 		li {
+			position: relative;
 			margin: 0px 5px 0px 0px;
 			padding: 0px 10px 0px 0px;
 			
 			&:last-child {
 				margin: 0;
 				padding: 0;
+
+				&::after {
+					content: none;
+				}
+			}
+
+			&::after {
+				content: "/";
+				position: absolute;
+				right: 0;
 			}
 		}
 	}
@@ -69,16 +80,9 @@
 	// .breadcrumb__item
 
 	&__item {
-		position: relative;
 		font-size: 14px;
 		font-weight: 700;
 		letter-spacing: 0.02em;
 		color: #666666;
-
-		&::before {
-			content: "/";
-			position: absolute;
-			left: -10px;
-		}
 	}
 }

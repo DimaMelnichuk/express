@@ -67,6 +67,11 @@
 		letter-spacing: 0.02em;
 		color: #222222;
 		margin: 3px 0px 10px 0px;
+		height: calc(20px * 2);
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
 		transition: color .3s;
 
 		@media (max-width: $md4+px) {
