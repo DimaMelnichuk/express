@@ -29,6 +29,7 @@
 		padding: 12.5px;
 
 		@media (max-width: $md2+px) {
+			flex: 0 0 100%;
 			display: flex;
 			flex-wrap: wrap;
 			margin: -10px;

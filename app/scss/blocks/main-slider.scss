@@ -33,11 +33,6 @@
 			}
 		}
 	}
-
-	// .main-slider__post
-
-	&__post {
-	}
 }
 .slider-post {
 
@@ -109,7 +104,7 @@
 		flex-direction: column;
 		bottom: 30px;
 		left: 30px;
-		right: 15px;
+		right: 30px;
 		color: #fff;
 
 		@media (max-width: $md2+px) {

@@ -23,11 +23,6 @@
 			flex: 0 1 100%;
 		}
 
-		@media (max-width: $md4+px) {
-			&:nth-child(2n){
-				display: none;
-			}
-		}
 	}
 
 	// .teach-news__item

@@ -1,5 +1,11 @@
 .recent-post {
 
+	&__item-body {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
 	// .recent-post__item-img
 
 	&__item-img {

@@ -33,6 +33,7 @@
 		&--df {
 			display: flex;
 			flex: 0 1 143%;
+			height: auto;
 
 			@media (max-width: $md2+px) {
 				flex: 0 1 120%;

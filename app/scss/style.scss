@@ -11,27 +11,27 @@
 
 // Blocks
 @import "blocks/header";
-@import "blocks/header-page";
 @import "blocks/main-slider";
 @import "blocks/content-page";
 @import "blocks/aside-page";
 @import "blocks/lifestyle-page";
+@import "blocks/fashion-page";
+@import "blocks/news-page";
+@import "blocks/teach-news";
+@import "blocks/sport-news";
+@import "blocks/page-category";
+@import "blocks/post-page";
 @import "blocks/footer";
 @import "blocks/footer-page";
+
+// General Blocks
 @import "blocks/title";
 @import "blocks/title-line";
 @import "blocks/title-aside";
 @import "blocks/recent-post";
 @import "blocks/overlay-post";
 @import "blocks/big-post";
-@import "blocks/fashion-page";
-@import "blocks/news-page";
-@import "blocks/teach-news";
-@import "blocks/sport-news";
 @import "blocks/useful-links";
-@import "blocks/page-category";
-@import "blocks/content-category-v2";
-@import "blocks/post-page";
 
 // Aside blocks
 @import "aside/media-aside";
@@ -105,6 +105,10 @@ body {
 	
 	&__body-aside {
 		flex: 0 0 370px;
+
+		@media (max-width: $md2+px) {
+			flex: 0 0 100%;
+		}
 	}
 }
 
