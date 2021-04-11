@@ -57,7 +57,7 @@ let lifestyleSlider = new Swiper('.lifestyle-page__slider-container', {
 		601: {
 			slidesPerColumn: 2,
 		},
-		800: {
+		1400: {
 			slidesPerColumn: 3,
 		}
 	 }
@@ -97,6 +97,9 @@ let sportSlider = new Swiper('.sport-news__slider-container', {
 			slidesPerView: 2,
 		},
 		900: {
+			slidesPerView: 3,
+		},
+		1400: {
 			slidesPerView: 3,
 			slidesPerColumn: 2,
 		}
